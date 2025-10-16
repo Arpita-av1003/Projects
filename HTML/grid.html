@@ -6,13 +6,16 @@
     <title>grid</title>
    <style>
      .parent{
+        height:100vh;
+        width:100% ;
         display:grid;
-        grid-template-columns: h h h h,
-        sb sb c c,
-        sb sb c c,
-        sb sb c c,
-        sb sb c c,
-        f f f f ;
+        grid-template-areas:"h h h h"
+        "sb sb c c"
+        "sb sb c c"
+        "sb sb c c"
+        "sb sb c c"
+        "sb sb c c"
+        "f f f f" ;
     }
     .header{
         grid-area: h;

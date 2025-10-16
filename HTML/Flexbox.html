@@ -5,50 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .parent {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+      }
+
       .red {
         background-color: red;
+        width: 80%;
+        border: 1px solid;
         display: flex;
-        justify-content: center;
-        height: 100vh;
-      }
-      .yellow {
-        background-color: yellow;
         justify-content: space-around;
-        width:80%;
+        align-items: center;
         border: 1px solid;
       }
-      .green {
-        background-color: green;
-        justify-content:space-between ;
-        height:80%;
-        width: 20%;
 
+      .green {
+        background-color: greenyellow;
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid;
       }
+
       .pink {
         background-color: pink;
-        justify-content: space-around;
-         height:80%;
-        width: 20%;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
       }
-      .blue1 {
+
+      .blue {
         background-color: blue;
-        height: 40%;
-        width: 40%;
-      }
-      .blue2 {
-       background-color: blue;
-        height: 40%;
-        width: 40%;
+        width: 5rem;
+        height: 5rem;
       }
     </style>
   </head>
+
   <body>
-    <div class="red">
-      <div class="yellow">
-        <div class="green">i</div>
+    <div class="parent">
+      <div class="red">
+        <div class="green"></div>
         <div class="pink">
-          <div class="blue1">1</div>
-          <div class="blue2">2</div>
+          <div class="blue"></div>
+          <div class="blue"></div>
         </div>
       </div>
     </div>
